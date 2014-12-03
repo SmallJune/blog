@@ -31,9 +31,9 @@
                     {% endfor %}
                 </p>  
             </div>
-            <div class="span2 offset7">
-                <a href="/" title="delete"><i class="icon-trash"></i></a>
-                <a href="/" title="edit"><i class="icon-edit"></i></a>
+             <div class="span2 offset7">
+                <a href="/sblog/blog/{{ blog.id }}" title="delete"><i class="icon-trash"></i></a>
+                <a href="{% url updateblog blog.id %}" title="edit"><i class="icon-edit"></i></a>
                 <a href="#cmt" title="comment"><i class=" icon-comment"></i></a>
             </div>
         </div>
